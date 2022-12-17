@@ -16,11 +16,6 @@ class App extends Component  {
     filter: '',
   }
 
- 
-  formHandleSubmit = data => {
-    console.log(data)
-  };
-
   addContact = (nameForAdd, numberForAdd) => {
     const isExistContact = this.state.contacts.find(
       ({ name }) => name === nameForAdd,
